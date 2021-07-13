@@ -1,0 +1,81 @@
+#services{
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+@media screen and (max-width:576px){
+    .about-cards,.service-cards,.team-cards,.blog-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-cards .card-body h6,.service-cards .card-body h6 , .blog-cards .card-body h6{
+        height: 5.5vh;
+    }
+    .service-cards .icon{
+        height: 8vh; 
+    }
+    .service-cards .card{
+        height: 15rem;
+    }
+    .ad-text{
+        height: 50vh;
+    }
+    .ad-img{
+        height: 50vh;
+    }
+    .btm{
+        height: 25vh;
+
+    }
+    .btmdata{
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .btmdata button{
+        margin-top: 1rem;
+    }
+    .btmdata button{
+        margin-left: 0rem;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+    .about-cards,.service-cards,.team-cards,.blog-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-cards .card-body h6,.service-cards .card-body h6 , .blog-cards .card-body h6{
+        height: 5.5vh;
+    }
+    .team-cards .card-body h6{
+        height: 3vh;
+    }
+    .service-cards .icon{
+        height: 8vh; 
+    }
+    .service-cards .card{
+        height: 20rem;
+    }
+    .team-cards .card img{
+        height: 30vh;
+    }
+    .ad-text{
+        height: 40vh;
+    }
+    .ad-img{
+        height: 40vh;
+    }
+    .gallery{
+        height: 26vh;
+    }
+    .btm{
+        height: 15vh;
+    }
+    .btmdata{
+        height: 15vh;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+}
