@@ -1,3 +1,5 @@
+AOS.init();
+
 $(window).on("load",function(){
     $(".loader").fadeOut(3000);
   });
@@ -6,6 +8,8 @@ $(window).on("load",function(){
     $("#bar").click(function(){
       $(".navlinksec").slideToggle("slow");
     });
+    
+
     $(".navlinksec ul li").click(function(){
         if (window.matchMedia("(max-width: 576px)").matches) {
             $(".navlinksec").slideUp("slow");
@@ -18,3 +22,4 @@ $(window).on("load",function(){
           }
        
       });
+
