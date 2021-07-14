@@ -13,6 +13,10 @@
     }
     .service-cards .icon{
         height: 8vh; 
+        transform: translateZ(0px);
+    }
+    .service-cards .card-body h6{
+        transform: translateZ(0px);
     }
     .service-cards .card{
         height: 15rem;
@@ -39,7 +43,33 @@
     .btmdata button{
         margin-left: 0rem;
     }
+    #bar{
+        display: initial;
+    }
+    .navlinksec{
+        display: none;
+      
+    }
+    .navlinksec ul{
+        margin-top: 2rem;
+        flex-direction: column;
+       
+    }
+    .navlinksec ul li{
+        padding: 0.5rem;
+        
+        margin-left: 0rem;
+        text-align: center;
+    }
+    .space{
+        height: 1vh;
+        background-color: red;
+        
+    }
+   
+
 }
+
 @media screen and (min-width:768px) and (max-width:1024px){
     .about-cards,.service-cards,.team-cards,.blog-cards{
         display: flex;
@@ -77,5 +107,26 @@
         display: flex;
         flex-direction: row;
         text-align: center;
+    }
+    #bar{
+        display: initial;
+    }
+    .navlinksec{
+        display: none;
+      
+    }
+    .navlinksec ul{
+        margin-top: 2rem;
+        flex-direction: column;
+       
+    }
+    .navlinksec ul li{
+        padding: 1rem;
+        
+        margin-left: 0rem;
+        text-align: center;
+    }
+    .space{
+        height: 1vh;
     }
 }

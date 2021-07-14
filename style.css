@@ -3,17 +3,24 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
 
+body{
+    scroll-behavior: smooth;
+}
 :root{
     --bg-color:#404598;
     --btn-color:#05ce73;
 }
+.space{
+    height: 1vh;
+}
+
 p{
     font-size: small;
 }
+
 button{
     outline: none;
     border: 1.5px solid var(--btn-color);
@@ -274,4 +281,51 @@ footer .followus ul{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+.nav{
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 9999;
+}
+.nav .logo, .logosec{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .logo h5{
+    font-weight: bold;
+    margin-left: 0.6rem;
+    margin-bottom: 0rem;
+    color: var(--bg-color);
+}
+#bar{
+    display: none;
+    color: var(--bg-color);
+    font-size: 1.3rem;
+}
+.navlinksec{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #fff;
+    
+}
+.navlinksec ul{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0rem;
+}
+.navlinksec ul li{
+    margin-bottom: 0rem;
+    margin-left: 3rem;
+}
+.navlinksec ul li a{
+  color: var(--bg-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+.navlinksec ul li a:hover{
+    color: var(--btn-color);
+  
 }
