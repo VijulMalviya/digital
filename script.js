@@ -1,4 +1,8 @@
-$(document).ready(function(){
+$(window).on("load",function(){
+    $(".loader").fadeOut(3000);
+  });
+
+
     $("#bar").click(function(){
       $(".navlinksec").slideToggle("slow");
     });
@@ -14,4 +18,3 @@ $(document).ready(function(){
           }
        
       });
-  });

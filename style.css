@@ -20,7 +20,30 @@ body{
 p{
     font-size: small;
 }
-
+.loader{
+    
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 99999;
+}
+.loader img{
+   
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    animation: loading 1s ease-in-out 0s infinite forwards alternate;
+}
+@keyframes loading {
+    from{
+        transform: scale(1);
+    }
+    to{ transform: scale(0.7);}
+}
 button{
     outline: none;
     border: 1.5px solid var(--btn-color);
